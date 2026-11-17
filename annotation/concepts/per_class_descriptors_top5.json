@@ -1,0 +1,563 @@
+{
+  "person": [
+    "two-legged stance",
+    "facial features (eyes, nose, mouth)",
+    "hair on head",
+    "clothing or accessories",
+    "hands and fingers"
+  ],
+  "bicycle": [
+    "Two-wheeled",
+    "Handlebars",
+    "Pedals",
+    "Saddle or seat",
+    "Chain and gears for transmission"
+  ],
+  "car": [
+    "Four wheels",
+    "License plate",
+    "Side mirrors",
+    "Door handles",
+    "Brand logo or emblem"
+  ],
+  "motorcycle": [
+    "Two-wheeled",
+    "Handlebars",
+    "Saddle or seat",
+    "Exhaust pipes",
+    "Engine visible"
+  ],
+  "airplane": [
+    "Jet engines",
+    "Aircraft wing",
+    "Fuselage with windows",
+    "Tail",
+    "Landing gear"
+  ],
+  "bus": [
+    "Large vehicle with multiple windows and bus doors",
+    "Large side/rear-view mirrors",
+    "Rectangular shape",
+    "Wheels visible",
+    "Bus company logo or branding"
+  ],
+  "train": [
+    "elongated vehicle with multiple carriages",
+    "steel wheels on tracks",
+    "windows and doors along the sides of the carriages",
+    "train tracks visible",
+    "overhead power lines or electric rails"
+  ],
+  "truck": [
+    "Four wheels",
+    "Cab for driver",
+    "Large, boxy body",
+    "License plate",
+    "Side mirrors"
+  ],
+  "boat": [
+    "Floating on water",
+    "Visible sails or nautical flags",
+    "Watercraft with a hull",
+    "Visible anchor or mooring lines",
+    "Visible steering wheel or rudder"
+  ],
+  "traffic light": [
+    "Vertical arrangement of colored lights",
+    "Mounted on a vertical structure",
+    "Mounted on a horizontal structure",
+    "Visible pedestrian crossing signals",
+    "Timer display for each light phase"
+  ],
+  "fire hydrant": [
+    "cylindrical shape",
+    "rounded top",
+    "metallic",
+    "nozzles or valves for connectings hoses",
+    "located near the edge of a sidewalk or street"
+  ],
+  "stop sign": [
+    "Octagonal shape",
+    "Red color",
+    "White border",
+    "White text \"STOP\"",
+    "Mounted on a pole"
+  ],
+  "parking meter": [
+    "tall, vertical structure",
+    "coin slot or card reader",
+    "digital/analog display for time",
+    "visible buttons or controls",
+    "topper or hood protecting the display from weather"
+
+  ],
+  "bench": [
+    "Wooden or metal structure",
+    "Flat seating surface",
+    "Backrest (if present)",
+    "Armrests (if present)",
+    "Legs or supports underneath"
+  ],
+  "bird": [
+    "feathers",
+    "wings",
+    "beak",
+    "claws or talons",
+    "colorful plumage"
+  ],
+  "cat": [
+    "four legs",
+    "Whiskers",
+    "Pointed ears",
+    "fur",
+    "Slit pupils"
+  ],
+  "dog": [
+    "four legs",
+    "snout with a nose",
+    "fur",
+    "paws",
+    "panting tongue"
+  ],
+  "horse": [
+    "four legs",
+    "Mane on the neck",
+    "Hooves",
+    "Long tail",
+    "Muscular"
+  ],
+  "sheep": [
+    "four legs",
+    "Hooves",
+    "woolly coat",
+    "typically white or black in color",
+    "found in flocks"
+  ],
+  "cow": [
+    "four legs",
+    "snout with a nose",
+    "curved horns",
+    "large, floppy ears",
+    "visible udder (in females)"
+  ],
+  "elephant": [
+    "four legs",
+    "Large, floppy ears",
+    "grey",
+    "Long trunk",
+    "Tusks"
+  ],
+  "bear": [
+    "large, stocky body",
+    "thick dark fur",
+    "prominent snout",
+    "rounded ears",
+    "sharp claws"
+  ],
+  "zebra": [
+    "black and white",
+    "striped coat",
+    "long, slender legs",
+    "tall, erect mane",
+    "rounded ears"
+  ],
+  "giraffe": [
+    "tall",
+    "long-necked mammal",
+    "pattern of irregular patches",
+    "long legs",
+    "ossicones (horn-like structures) on the head"
+  ],
+  "backpack": [
+    "Two shoulder straps",
+    "Zippered compartments",
+    "Top handle",
+    "Padded back panel",
+    "Water bottle holder"
+  ],
+  "umbrella": [
+    "handle or grip for holding",
+    "shaft or pole for support",
+    "various colors and patterns",
+    "waterproof canopy",
+    "ribs or spokes supporting the canopy"
+  ],
+  "handbag": [
+    "straps",
+    "handles for carrying",
+    "compartments or pockets for storage",
+    "zippers or clasps for closure",
+    "branding or designer labels"
+  ],
+  "tie": [
+    "long and narrow",
+    "worn around the neck",
+    "often tucked under a collar",
+    "knotted",
+    "typically solid-colored or patterned"
+  ],
+  "suitcase": [
+    "rectangular or oblong shape",
+    "handle for carrying",
+    "zipper or latch closure",
+    "wheels for easy transport",
+    "various sizes (carry-on, medium, large)"
+  ],
+  "frisbee": [
+    "circular shape",
+    "flat and thin profile",
+    "rounded edges",
+    "bright colors or patterns",
+    "smooth surface"
+  ],
+  "skis": [
+    "Long, narrow, and curved shape",
+    "Metal edges along the sides",
+    "Bindings to secure boots",
+    "Usually paired together",
+    "Tips and tails that curve upwards"
+  ],
+  "snowboard": [
+    "elongated, narrow board shape",
+    "smooth, glossy surface",
+    "bindings or straps for securing boots",
+    "snowboard boots nearby",
+    "snow-covered or icy background"
+  ],
+  "sports ball": [
+    "spherical shape",
+    "textured surface for grip",
+    "may have logos or brand markings",
+    "seams or panels",
+    "various colors"
+  ],
+  "kite": [
+    "colorful and patterned fabric",
+    "long tail",
+    "string or line attached",
+    "typically triangular or diamond-shaped",
+    "flown in the air"
+  ],
+  "baseball bat": [
+    "long, cylindrical shape",
+    "smooth, wooden or metal surface",
+    "tapered handle",
+    "knob at the end of the handle",
+    "grip tape or rubberized handle"
+  ],
+  "baseball glove": [
+    "webbing between fingers",
+    "padded palm area",
+    "finger stalls for each finger",
+    "wrist strap or closure",
+    "pocket for catching the ball"
+  ],
+  "skateboard": [
+    "wooden deck",
+    "four wheels",
+    "trucks (metal axles)",
+    "grip tape on the top surface",
+    "concave shape of the deck"
+  ],
+  "surfboard": [
+    "elongated, narrow shape",
+    "pointed or rounded nose",
+    "flat, wide tail",
+    "smooth, glossy surface",
+    "fin(s) on the underside"
+  ],
+  "tennis racket": [
+    "oval or round-shaped head",
+    "long handle or grip",
+    "strings stretched across the head",
+    "flat hitting surface",
+    "logo or branding visible on the frame"
+  ],
+  "bottle": [
+    "cylindrical or rectangular shape",
+    "transparent or translucent material",
+    "narrow neck with a cap or cork",
+    "liquid inside",
+    "label or branding"
+  ],
+  "wine glass": [
+    "transparent or translucent material",
+    "stem connecting the bowl to the base",
+    "curved bowl shape",
+    "narrow opening at the top",
+    "round or slightly elongated base"
+  ],
+  "cup": [
+    "Cylindrical shape",
+    "Handle for gripping",
+    "Circular opening at the top",
+    "Often decorated with patterns or designs",
+    "Typically used for holding beverages"
+  ],
+  "fork": [
+    "Elongated shape",
+    "Tines or prongs",
+    "used for for picking up food",
+    "Handle for gripping",
+    "Typically silver or metallic in color"
+  ],
+  "knife": [
+    "Sharp blade",
+    "Handle for gripping",
+    "Pointed tip",
+    "Serrated edge (if applicable)",
+    "Cutting edge"
+  ],
+  "spoon": [
+    "small, handheld utensil",
+    "elongated handle",
+    "shallow, oval or round-shaped bowl",
+    "reflective surface",
+    "used for eating or serving food"
+  ],
+  "bowl": [
+    "circular or oval shape",
+    "open top with no lid",
+    "convex",
+    "holds food, liquids, or other items",
+    "may have handles or a rim"
+  ],
+  "banana": [
+    "elongated", 
+    "curved shape",
+    "yellow color when ripe",
+    "smooth skin with ridges",
+    "tapered ends"
+  ],
+  "apple": [
+    "round or oval shape",
+    "stem at the top",
+    "smooth and shiny skin",
+    "red color",
+    "green color"
+  ],
+  "sandwich": [
+    "rectangular",
+    "trinagular",
+    "Two or more slices of bread",
+    "Various layers of fillings (meat, cheese, vegetables, condiments)",
+    "Crust on the bread slices"
+  ],
+  "orange": [
+    "round shape",
+    "bright orange color",
+    "dimpled texture on the skin",
+    "stem at the top",
+    "segmented interior"
+  ],
+  "broccoli": [
+    "Green color",
+    "Cluster of small, tight florets",
+    "Thick, edible stalk",
+    "Leafy, dark green tops",
+    "Textured surface"
+  ],
+  "carrot": [
+    "elongated shape",
+    "orange color",
+    "rough texture",
+    "leafy green stem",
+    "cylindrical form"
+  ],
+  "hot dog": [
+    "elongated shape",
+    "bun or bread surrounding the filling",
+    "condiments such as ketchup, mustard, or relish",
+    "visible sausage or filling inside the bun",
+    "grilled or cooked appearance"
+  ],
+  "pizza": [
+    "Circular shape",
+    "Crust around the edges",
+    "Various toppings",
+    "Melted cheese covering the toppings",
+    "Sliced into triangular pieces"
+  ],
+  "donut": [
+    "Circular shape", 
+    "with a hole in the center",
+    "fluffy",
+    "Glazed or frosted coating",
+    "Sprinkles or toppings"
+  ],
+  "cake": [
+    "candles for celebration cakes",
+    "round or rectangular shape",
+    "multiple layers or tiers",
+    "frosting or icing covering the top and sides",
+    "decorative elements such as flowers, writing, or designs"
+  ],
+  "chair": [
+    "four-legged furniture",
+    "seat cushion or surface",
+    "backrest or support for the back",
+    "armrests (if present)",
+    "individual seating"
+  ],
+  "couch": [
+    "upholstered furniture",
+    "cushioned seating",
+    "backrest",
+    "seating for multiple people",
+    "rectangular or L-shaped design"
+  ],
+  "potted plant": [
+    "green leaves or foliage",
+    "visible soil or potting mix",
+    "stems or branches",
+    "brown or terracotta pot",
+    "roots emerging from the pot"
+  ],
+  "bed": [
+    "rectangular shape",
+    "mattress",
+    "pillows",
+    "sheets or covers",
+    "visible legs or base"
+  ],
+  "dining table": [
+    "flat, horizontal surface",
+    "legs or base supporting the surface",
+    "rectangular shape",
+    "round shape",
+    "tableware on the surface"
+  ],
+  "toilet": [
+    "Bowl shape with a seat",
+    "Water tank connected to the bowl",
+    "Flush handle or button",
+    "Plumbing pipes connected to the back or bottom",
+    "Floor-mounted or wall-mounted"
+  ],
+  "tv": [
+    "Rectangular screen",
+    "Thin bezel/frame around the screen",
+    "Stand or mount supporting the screen",
+    "Power cord visible",
+    "Reflections on the screen"
+  ],
+  "laptop": [
+    "keyboard for input",
+    "trackpad or touchpad for navigation",
+    "various ports for connectivity (USB, HDMI, etc.)",
+    "webcam for video conferencing",
+    "display screen with a lid"
+  ],
+  "mouse": [
+    "small handheld pointing device",
+    "oval or rounded ergonomic shape",
+    "two primary buttons (left and right click)",
+    "central scroll wheel between the buttons",
+    "cable attached at the front" 
+  ],
+  "remote": [
+    "small handheld device",
+    "rectangular or oblong shape",
+    "buttons or keys for controlling functions",
+    "infrared sensor at one end",
+    "battery compartment"
+  ],
+  "keyboard": [
+    "rectangular shape",
+    "rows of keys",
+    "letters and numbers",
+    "space bar",
+    "cable or wireless connection"
+  ],
+  "cell phone": [
+    "rectangular shape",
+    "touchscreen display",
+    "front and rear cameras",
+    "slim profile",
+    "brand logo visible"
+  ],
+  "microwave": [
+    "rectangular or cube-shaped appliance",
+    "digital display panel",
+    "door with a handle",
+    "control buttons or touchpad",
+    "interior light"
+  ],
+  "oven": [
+    "Rectangular or box-like shape",
+    "Metallic or heat-resistant material",
+    "Glass door for viewing inside",
+    "Control panel with temperature settings",
+    "Oven racks or shelves inside"
+  ],
+  "toaster": [
+    "boxy shape",
+    "slots for bread",
+    "power cord",
+    "lever for lowering bread",
+    "control knobs for setting toast level"
+  ],
+  "sink": [
+    "basin or bowl-shaped structure",
+    "faucet or tap for water flow",
+    "drain or plug hole",
+    "plumbing pipes or connections visible",
+    "attached to a countertop or mounted on a wall"
+  ],
+  "refrigerator": [
+    "large",
+    "boxy shape",
+    "handle or latch for opening the door",
+    "shelves or compartments inside",
+    "temperature control panel"
+  ],
+  "book": [
+    "rectangular shape",
+    "pages with text",
+    "cover with title and author",
+    "bookmarks sticking out",
+    "illustrations or images"
+  ],
+  "clock": [
+    "circular shape",
+    "square shape",
+    "numbers to indicate time",
+    "face with markings for minutes and hours",
+    "mounting or support"
+  ],
+  "vase": [
+    "cylindrical or urn-shaped container",
+    "made of ceramic, glass, or metal",
+    "Used for holding flowers or other decorative items",
+    "narrow neck", 
+    "wide base"
+  ],
+  "scissors": [
+    "Two sharp blades",
+    "Finger holes for gripping",
+    "Hinge or pivot point where the blades meet",
+    "Cutting edge and blunt edge",
+    "Pointed tips"
+  ],
+  "teddy bear": [
+    "plush or furry texture",
+    "round ears",
+    "button or plastic eyes",
+    "stitched nose and mouth",
+    "typically in a sitting position"
+  ],
+  "hair drier": [
+    "handheld device",
+    "elongated body with a nozzle",
+    "control buttons or switches",
+    "a cord for power",
+    "airflow vents"
+  ],
+  "toothbrush": [
+    "elongated handle",
+    "bristles at one end",
+    "various colors",
+    "brand logo or design on the handle",
+    "Stored in a holder or cup"
+  ]
+}

@@ -1,0 +1,22 @@
+The code in this folder is adapted from:
+
+  Sachit Menon and Carl Vondrick, "Visual Classification via Description from
+  Large Language Models", ICLR 2023. https://arxiv.org/abs/2210.07183
+  Code: https://github.com/sachit-menon/classify_by_description_release
+
+The upstream repository does not include a LICENSE file. The upstream code is
+used here for research reproducibility only; please cite the paper above when
+using this part of the code:
+
+  @article{menon2022visual,
+    author  = {Menon, Sachit and Vondrick, Carl},
+    title   = {Visual Classification via Description from Large Language Models},
+    journal = {ICLR},
+    year    = {2023},
+  }
+
+Derived files: loading_helpers.py (from loading_helpers.py and
+descriptor_strings.py), generate_descriptors.py (prompt format and parsing),
+load_coco.py / main_coco.py (COCO adaptation of load.py / main.py).
+Changes: COCO object-crop dataset, per-instance concept-vector labelling,
+Rule 1/2/3 statistics, binarization (binarize_concepts.py, new).

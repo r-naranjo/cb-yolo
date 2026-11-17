@@ -1,0 +1,20 @@
+# Requirements of annotation/ (install PyTorch/torchvision for your CUDA first:
+# the original runs used torch 2.5.1 + CUDA 12.4).
+torch>=2.1
+torchvision
+numpy
+pillow
+matplotlib
+tqdm
+
+# Qwen3-VL labelling (qwen/annotate_*.py)
+transformers>=4.57.0        # first release with Qwen3VLForConditionalGeneration
+accelerate                  # device_map placement
+flash-attn                  # attn_implementation="flash_attention_2" (pip install flash-attn --no-build-isolation)
+
+# CLIP labelling (clip/)
+git+https://github.com/openai/CLIP.git
+ftfy
+regex
+torchmetrics>=0.10,<0.11    # main_coco.py evaluate uses the pre-0.11 Accuracy() API
+openai>=1.66                # Responses API (clip/generate_descriptors.py only)

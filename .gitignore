@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.so
+
+# environments
+.venv/
+venv/
+*_env/
+
+# data, weights and run outputs (not distributed with the code)
+datasets/
+YOLOX_outputs/
+outputs/
+*.pth
+*.pt
+*.onnx
+*.engine
+
+# editor / OS
+.idea/
+.vscode/
+.DS_Store
