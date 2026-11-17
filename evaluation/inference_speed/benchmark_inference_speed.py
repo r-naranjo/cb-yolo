@@ -6,7 +6,8 @@ Both variants are built from the same CB-YOLOX checkpoint and experiment
 file: the "cbm" variant is the model as trained; the "normal" variant is the
 same experiment with num_concepts=None (plain 1x1 cls_preds head), loaded
 non-strictly from the same checkpoint (concept_preds/concept_to_cls are
-skipped). Latency only depends on shapes and ops, so this isolates the
+skipped and cls_preds, absent from CB-YOLOX checkpoints, keeps its random
+initialisation). Latency only depends on shapes and ops, so this isolates the
 compute added by the concept bottleneck.
 
 Timed: `model(x)` in eval mode (backbone + FPN + head, including box

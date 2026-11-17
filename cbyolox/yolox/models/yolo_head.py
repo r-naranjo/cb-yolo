@@ -38,8 +38,10 @@ class YOLOXHead(nn.Module):
         c        = concept_preds[k](cls_feat)          # g: K concept logits
         y        = concept_to_cls[k](sigmoid(c))        # f: 1x1 conv -> class logits
 
-    ``cls_preds`` is still built (and present in checkpoints) but unused in
-    the CBM forward pass.
+    The plain ``cls_preds`` layer (features -> 80 classes) exists only in the
+    vanilla head; the CBM head replaces it with g and f. ``cls_preds`` entries
+    in a checkpoint (from YOLOX weights or older CB-YOLOX checkpoints) are
+    ignored when loading into a CBM head.
 
     Training loss (CBM)::
 
@@ -208,16 +210,17 @@ class YOLOXHead(nn.Module):
                     ]
                 )
             )
-            self.cls_preds.append(
-                nn.Conv2d(
-                    in_channels=int(256 * width),
-                    out_channels=self.num_classes,
-                    kernel_size=1,
-                    stride=1,
-                    padding=0,
+            if self.num_concepts is None:
+                self.cls_preds.append(
+                    nn.Conv2d(
+                        in_channels=int(256 * width),
+                        out_channels=self.num_classes,
+                        kernel_size=1,
+                        stride=1,
+                        padding=0,
+                    )
                 )
-            )
-            if self.num_concepts is not None:
+            else:
                 # g: concept logits
                 self.concept_preds.append(
                     nn.Conv2d(
@@ -285,6 +288,14 @@ class YOLOXHead(nn.Module):
 
     def clear_interventions(self):
         self.interventions = None
+
+    def _load_from_state_dict(self, state_dict, prefix, *args, **kwargs):
+        # The CBM head has no plain cls_preds: drop it from checkpoints that
+        # still contain it, so they load strictly.
+        if self.num_concepts is not None:
+            for key in [k for k in state_dict if k.startswith(prefix + "cls_preds.")]:
+                del state_dict[key]
+        super()._load_from_state_dict(state_dict, prefix, *args, **kwargs)
 
     def initialize_biases(self, prior_prob):
         for conv in self.cls_preds:
@@ -943,7 +954,10 @@ class YOLOXHead(nn.Module):
             reg_x = x
 
             cls_feat = cls_conv(cls_x)
-            cls_output = self.cls_preds[k](cls_feat)
+            if self.num_concepts is not None:
+                cls_output = self.concept_to_cls[k](torch.sigmoid(self.concept_preds[k](cls_feat)))
+            else:
+                cls_output = self.cls_preds[k](cls_feat)
             reg_feat = reg_conv(reg_x)
             reg_output = self.reg_preds[k](reg_feat)
             obj_output = self.obj_preds[k](reg_feat)

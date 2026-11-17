@@ -9,7 +9,7 @@ classification branch).
   the L1 loss from the first epoch, and optional loading of a pretrained
   checkpoint (``pretrained_ckpt``).
 - :class:`CBYOLOXFinetuneExp`: fine-tunes only the classification branch
-  (``cls_convs``, ``cls_preds`` and the concept bottleneck ``concept_preds`` /
+  (``cls_convs`` and the concept bottleneck ``concept_preds`` /
   ``concept_to_cls``) of a trained YOLOX model. Everything else (backbone, FPN,
   ``stems``, regression and objectness branches) is frozen and the frozen
   BatchNorm layers are kept in eval mode. Optionally the whole model is
@@ -177,7 +177,7 @@ class CBYOLOXFinetuneExp(CBYOLOXExp):
         # `head.stems` is shared by the cls and reg branches and stays frozen.
         self.trainable_param_prefixes = [
             "head.cls_convs",
-            "head.cls_preds",
+            "head.cls_preds",  # plain head only (num_concepts=None)
         ]
         # also train g (concept_preds) and f (concept_to_cls)
         self.train_concept_branch = True

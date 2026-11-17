@@ -5,8 +5,9 @@ For each model size, both variants run on the same sample images:
   * CB-YOLOX: the experiment/checkpoint as trained;
   * YOLOX (plain head): same experiment with num_concepts=None, weights from
     --normal_ckpt_template (a checkpoint trained with the plain head) or, if
-    not given, loaded non-strictly from the CB-YOLOX checkpoint (only useful
-    if its cls_preds were trained).
+    not given, loaded non-strictly from the CB-YOLOX checkpoint (which has
+    no cls_preds, so the plain classifier is left at random initialisation;
+    pass the official YOLOX checkpoints, e.g. yolox_{size}.pth).
 Inference uses CBMPredictor.inference (class-agnostic NMS).
 
 Outputs (under --output_dir):
